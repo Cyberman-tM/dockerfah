@@ -5,7 +5,8 @@ ADD https://download.foldingathome.org/releases/public/release/fahclient/ubuntu-
 
 RUN apt-get update
 RUN apt-get -y install libexpat1-dev
-RUN apt-get install libssl0.9.8
+RUN apt-get install libssl1.1
+
 # FIXME: Awful workaround until the DEBs are correctly packaged
 RUN dpkg -i /tmp/fahclient.deb || true
 

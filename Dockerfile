@@ -4,6 +4,7 @@ LABEL maintainer="rejutka"
 
 ADD https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb /tmp/fahclient.deb
 
+RUN apk add dpkg
 # FIXME: Awful workaround until the DEBs are correctly packaged
 RUN dpkg -i /tmp/fahclient.deb || true
 

@@ -7,6 +7,11 @@ ADD https://download.foldingathome.org/releases/public/release/fahclient/debian-
 # FIXME: Awful workaround until the DEBs are correctly packaged
 RUN dpkg -i /tmp/fahclient.deb || true
 
+#Create XML configuration for FAH
+RUN 'echo "<config> <max-units v=1></config>" > /usr/bin/config.xml'
+
 VOLUME ["/var/lib/fahclient", "/etc/fahclient"]
 ENTRYPOINT [ "/usr/bin/FAHClient" ]
-CMD [ "--fold-anon --finish" ]
+
+#Going a different route now
+# CMD [ "--fold-anon --finish" ]

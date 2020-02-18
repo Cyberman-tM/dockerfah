@@ -9,4 +9,4 @@ RUN dpkg -i /tmp/fahclient.deb || true
 
 VOLUME ["/var/lib/fahclient", "/etc/fahclient"]
 ENTRYPOINT [ "/usr/bin/FAHClient" ]
-CMD [ "--fold-anon --oneunit" ]
+CMD [ "--fold-anon --finish" ]

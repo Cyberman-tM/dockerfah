@@ -46,14 +46,6 @@
                     ],
                     "type": "Public"
                 },
-		        "environmentVariables": {
-            "value": [
-                {
-                    "name": "wuNum",
-                    "value": "1"
-                }
-            ]
-        }
                 "osType": "Linux"
             }
         }

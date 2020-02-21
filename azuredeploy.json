@@ -2,8 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "containerGroups_fah_docker_name": {
-            "defaultValue": "folding_docker",
+        "containerGroups_fahdocker_name": {
+            "defaultValue": "foldingdocker",
             "type": "String"
         }
     },
@@ -12,12 +12,12 @@
         {
             "type": "Microsoft.ContainerInstance/containerGroups",
             "apiVersion": "2018-10-01",
-            "name": "[parameters('containerGroups_fah_docker_name')]",
+            "name": "[parameters('containerGroups_fahdocker_name')]",
             "location": "eastus2",
             "properties": {
                 "containers": [
                     {
-                        "name": "[parameters('containerGroups_fah_docker_name')]",
+                        "name": "[parameters('containerGroups_fahdocker_name')]",
                         "properties": {
                             "image": "rejutka/foldingathome_test",
                             "ports": [

@@ -8,11 +8,11 @@
         },
         "number_of_cpus": {
             "defaultValue": "1",
-            "type": "Int"
+            "type": "String"
         },        
         "numFAHUnits": {
         "defaultValue": "1",
-        "type": "Int"
+        "type": "String"
         }
         
     },

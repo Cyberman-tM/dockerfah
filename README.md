@@ -9,4 +9,4 @@ Experimental button to deploy:
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 Experimental button for visualization:
-https://armviz.io
+http://armviz.io/#/?load=https://github.com/Cyberman-tM/dockerfah/blob/master/azuredeploy.json

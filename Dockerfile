@@ -11,6 +11,6 @@ RUN dpkg -i /tmp/fahclient.deb || true
 RUN echo "<config> <fold-anon v='true'/> <gpu v='false'/> <slot id='0' type='CPU'/> <max-units v='$numUnits'/></config>" > /usr/bin/config.xml
 
 VOLUME ["/var/lib/fahclient", "/etc/fahclient"]
-ENTRYPOINT [ "/usr/bin/FAHClient", "/usr/bin/config.xml"]
+ENTRYPOINT [ "/usr/bin/FAHClient", "/usr/bin/config.xml", "--finish"]
 
  #CMD [  ]

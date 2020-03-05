@@ -4,8 +4,13 @@
     "parameters": {
         "containerGroups_fahdocker_name": {
             "defaultValue": "foldingdocker",
-            "type": "String"
+            "type": "String"            
+        },
+        "number_of_units": {
+            "defaultValue": "1",
+            "type": "Int"
         }
+        
     },
     "variables": {},
     "resources": [

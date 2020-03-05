@@ -14,9 +14,9 @@
         "numFAHUnits": {
         "defaultValue": "1",
         "type": "Int"
-    }
+        }
         
-    },
+    }},
     "variables": {},
     "resources": [
         {

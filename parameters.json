@@ -18,7 +18,10 @@
             "value": "Linux"
         },
         "numberCpuCores": {
-            "value": "1"
+"type": "string",
+          "metadata": {
+            "description": "Number of CPUs to allocate"
+          }
         },
         "memory": {
             "value": "0.5"

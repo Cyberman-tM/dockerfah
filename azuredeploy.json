@@ -9,14 +9,13 @@
         "number_of_cpus": {
             "defaultValue": "1",
             "type": "Int"
-        },
-        {
+        },        
         "numFAHUnits": {
         "defaultValue": "1",
         "type": "Int"
         }
         
-    }},
+    },
     "variables": {},
     "resources": [
         {

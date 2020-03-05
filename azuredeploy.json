@@ -6,7 +6,7 @@
             "defaultValue": "foldingdocker",
             "type": "String"            
         },
-        "number_of_units": {
+        "number_of_cpus": {
             "defaultValue": "1",
             "type": "Int"
         }
@@ -35,7 +35,7 @@
                             "resources": {
                                 "requests": {
                                     "memoryInGB": 0.5,
-                                    "cpu": 1
+                                    "cpu": "[parameters('number_of_cpus')]"
                                 }
                             }
                         }

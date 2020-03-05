@@ -39,7 +39,7 @@
                             [
                                 {
                                     "name": "numUnits",
-                                    "value": "parameters('numFAHUnits')]"
+                                    "value": "[parameters('numFAHUnits')]"
                                 }
                             ],
                             "resources": {

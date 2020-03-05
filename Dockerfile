@@ -8,7 +8,8 @@ ADD https://download.foldingathome.org/releases/public/release/fahclient/debian-
 RUN dpkg -i /tmp/fahclient.deb || true
 
 #Create XML configuration for FAH
-RUN echo "<config> <fold-anon v='true'/> <gpu v='false'/> <slot id='0' type='CPU'/> <max-units v='$numUnits'/></config>" > /usr/bin/config.xml
+RUN echo "<config> <fold-anon v='true'/> <gpu v='false'/> <slot id='0' type='CPU'/> <max-units v='numUnits'/></config>" > /usr/bin/config.xml
+RUN sed -i s/numUnits/$numUnits/g /usr/bin/config.xml
 
 VOLUME ["/var/lib/fahclient", "/etc/fahclient"]
 ENTRYPOINT [ "/usr/bin/FAHClient", "/usr/bin/config.xml", "--finish"]

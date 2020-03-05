@@ -8,11 +8,8 @@ WORK IN PROGRESS!
 Experimental button to deploy:
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
-<a href="https://azuredeploy.net/
-   repository="https://github.com/Cyberman-tM/dockerfah.git"
-   target="_blank">
-   <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
+https://azuredeploy.net/repository="https://github.com/Cyberman-tM/dockerfah.git
+
 
 Experimental button for visualization:
 http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FCyberman-tM%2Fdockerfah%2Fmaster%2Fazuredeploy.json

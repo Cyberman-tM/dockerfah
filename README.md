@@ -6,8 +6,10 @@ Based upon https://github.com/heichblatt/dockerfiles/tree/master/foldingathome t
 WORK IN PROGRESS!
 
 Experimental button to deploy:
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+#Another method for the button
+#[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
+#This one is more readable IMO
 <a href="https://azuredeploy.net/?repository=https://github.com/Cyberman-tM/dockerfah" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>

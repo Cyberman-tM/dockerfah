@@ -9,7 +9,12 @@
         "number_of_cpus": {
             "defaultValue": "1",
             "type": "Int"
-        }
+        },
+        {
+        "numFAHUnits": {
+        "defaultValue": "1",
+        "type": "Int"
+    }
         
     },
     "variables": {},
@@ -31,7 +36,13 @@
                                     "port": 80
                                 }
                             ],
-                            "environmentVariables": [],
+                            "environmentVariables":
+                            [
+                                {
+                                    "name": "numUnits",
+                                    "value": "parameters('numFAHUnits')]"
+                                }
+                            ],
                             "resources": {
                                 "requests": {
                                     "memoryInGB": 0.5,

@@ -12,6 +12,6 @@ RUN echo "<config> <fold-anon v='true'/> <gpu v='false'/> <slot id='0' type='CPU
 RUN sed -i s/numUnits/$numUnits/g /usr/bin/config.xml
 
 VOLUME ["/var/lib/fahclient", "/etc/fahclient"]
-ENTRYPOINT [ "/usr/bin/FAHClient", "/usr/bin/config.xml", "--finish"]
+ENTRYPOINT [ "/usr/bin/FAHClient", "/usr/bin/config.xml"]
 
  #CMD [  ]
